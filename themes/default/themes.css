@@ -1,0 +1,191 @@
+@charset "utf-8";
+*{
+	padding: 0;
+	margin: 0;
+	list-style:none;
+}
+.xtree{
+	font-size:12px; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+	border:solid 1px #ddd;
+	width:350px;
+	padding:5px;
+	background-color:#ECFFEC;
+	-webkit-box-shadow:2px 2px 1px #ECFFEC;
+	position:relative;
+}
+.xtree-switch{
+	background:url(img/zTreeStandard.gif) no-repeat center;
+	border: 0;
+	float:left;
+	width:18px;
+	height:18px;
+}
+.xtree-noswitch{
+	background:url(img/zTreeStandard.gif) no-repeat center;
+	border: 0;
+	float:left;
+	width:18px;
+	height:18px;	
+}
+.xtree-current{
+	background-color:#FF9;
+	outline:1px dashed #ddd;
+}
+
+/**
+ * 标签
+*/
+.xtree-item{
+	clear:both;
+}
+.xtree-item a{
+	text-decoration:none;
+	float:left;
+	height:18px;
+	color:#333;	
+}
+a.xtree-label{
+	text-decoration:none;
+	float:left;
+	height:18px;
+	line-height:18px;
+	color:#333;
+    margin-left: 5px;
+    padding: 0 5px 0 2px;
+}
+.xtree-label-folder{
+	background:url(img/zTreeStandard.gif) no-repeat -110px -15px;
+	float:left;
+	width:16px;
+	height:18px;
+	border:0;
+}
+.xtree-label-file{
+	background:url(img/zTreeStandard.gif) no-repeat -110px -30px;
+	float:left;
+	width:16px;
+	height:18px;
+	border:0;
+}
+.xtree-label-words{
+	vertical-align:top;
+	margin-left:3px;
+}
+
+/**
+ * 	
+*/
+.xtree-root{}
+.xtree-line{
+	background:url(img/line_conn.gif) repeat-y left;
+	padding-left:20px;
+	clear:both;
+	overflow:hidden;
+}
+.xtree-line-none{
+	background:none;
+}
+.xtree-line-top{
+	background-position:-56px 0;
+}
+.xtree-line-mid{
+	background-position:-56px -18px;
+}
+.xtree-line-bottom{
+	background-position:-56px -36px;
+}
+
+/**
+ * 显示开关 
+ */
+.xtree-item-close .xtree-label-folder{
+	background:url(img/zTreeStandard.gif) no-repeat -110px 1px;
+	display:inline-block;
+	_display:inline;
+	width:16px;
+	height:18px;
+	border:0;
+}
+.xtree-top{
+	background-position:-92px 0;
+}
+.xtree-mid{
+	background-position:-92px -18px;
+}
+.xtree-bottom{
+	background-position:-92px -36px;
+}
+.xtree-item-close .xtree-top{
+	background-position:-74px 0px;
+}
+.xtree-item-close .xtree-mid{
+	background-position:-74px -18px;
+}
+.xtree-item-close .xtree-bottom{
+	background-position:-74px -36px;
+}
+
+/**
+ * 	右键菜单
+*/
+.xtree-context-menu{
+	font-size:12px; font-family: Verdana, Arial, Helvetica, AppleGothic, sans-serif;
+	position:absolute;
+	border:1px solid gray;
+	border-bottom:none;
+	display:none;
+	min-width:80px;
+	-webkit-box-shadow: 1px 1px 1px #F0F0F0;
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F8F8F8), to(#EEEEEE));
+    -webkit-box-shadow:1px 1px 1px #eee;
+}
+.xtree-context-menu li{
+	padding:5px;
+	height:20px;
+	border-bottom:1px solid gray;
+}
+.xtree-context-menu a{
+	text-decoration:none;
+	display:block;
+	height:20px;
+	line-height:20px;
+	color:#333;
+}
+.xtree-context-menu a:hover{
+	color:red;
+}
+
+/**
+ * checkbox
+*/
+button.xtree-checkbox{
+	background:url(img/checkbox.png) no-repeat 0 center;
+	float:left;
+	width:13px;
+	height:18px;
+	border:0;
+}
+button.xtree-checkbox-over{
+	background-position:-13px center;
+}
+button.xtree-checkbox-down{
+	background-position:-26px center;
+}
+button.xtree-checkbox-checked{
+	background-position:-52px center;
+}
+button.xtree-checkbox-checked-over{
+	background-position:-65px center;
+}
+button.xtree-checkbox-checked-down{
+	background-position:-78px center;
+}
+button.xtree-checkbox-half{
+	background-position:-104px center;
+}
+div.xtree-clear{
+    height: 0;
+    overflow: hidden;
+    clear: both;
+    display: block;;
+}
